@@ -1,10 +1,22 @@
 function initialise(data) {
-    setParams(data);
     var dropdown = ["All"];
     reportTypes = [...new Set(data.map(x => x.ReportType))].sort();
     dropdown = dropdown.concat(reportTypes);
     $('#SelectTarget').empty();
     $('#SelectTarget').append(dropdown.map(x => "<option>" + x + "</option>"));
+
+    var hash = window.location.hash;
+    if (hash) {
+        var query = hash.slice(1, -1);
+        selectChange(data, query)
+        var val = query.charAt(0).toUpperCase() + query.slice(1);
+        $('#SelectTarget').val(val);
+        $('#SelectTarget').change();
+    }
+    else {
+        setParams(data);
+    }
+
 }
 
 function setParams(data) {
@@ -45,7 +57,7 @@ function searchInDatum(datum, query) {
 }
 
 function selectChange(data, selected) {
-    var filtered = data.filter(x => x.ReportType === selected);
+    var filtered = data.filter(x => x.ReportType.toLowerCase() === selected.toLowerCase());
     if (filtered.length === 0) filtered = data;
     setParams(filtered);
 }

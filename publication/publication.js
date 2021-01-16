@@ -10,6 +10,10 @@ function setParams(data) {
     $("#ReportType").text(data.ReportType);
     $("#ExecSummary").text(data.ExecSummary);
 
+    $("#RT1").text(data.ReportType + "s");
+    $("#RT1").attr("href", "http://www.publications.scientistsforlabour.org.uk/#" + data.ReportType + "s");
+    $("#RT2").text(data.ReportType);
+
     var body = '';
     data.Body.forEach(el => {
         body += '<div class="underline-header"><h2>' + el.Heading +'</h2></div>';
