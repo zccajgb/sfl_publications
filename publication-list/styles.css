@@ -1,0 +1,22 @@
+.bg-sfl-red {
+    background-color: #e4003b;
+}
+
+.underline-header {
+    border-bottom:1px solid #6c757d;
+}
+
+.twitter-share-button { vertical-align: text-bottom !important; }
+
+.snsbutton{float:left; margin-left:3px}
+
+.fb-share-button{
+    position:relative;
+    top:-2px;
+    margin-right:3px;
+}
+
+.list-group-item:hover {
+    background-color: #0275d8;
+    color: white;
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>COVID-19: The Universities Angle</title>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="bMbi23l9"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script src="publication.js"></script>
+    <script>
+      window.onload = function() {
+        setParams(data);
+      };
+    </script>
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+    
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-sfl-red">
+      <div class="container">  
+        <div class="navbar-brand">
+          <a href="https://www.scientistsforlabour.org.uk">
+            <img src="logo.png" height="60">
+          </a>
+        </div>
+           
+        <div class="my-2 my-lg-0">
+          <h4><a class="text-light" href="https://www.scientistsforlabour.org.uk/join-us">Join Us</a></h4>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="container" >
+    <a href="#">Publications ></a><a href="#"> Briefings ></a><a href="#"> Briefing</a>
+    </div> -->
+  </div>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col col-9">
+
+          <div>
+            <h5><span id="ReportType"></span> | <span id="Date"></span></h5>
+            <h1 id="Title"></h1>
+            <div class="my-3">
+              <h4 id="Authors"></h3> 
+            </div>
+          </div>
+
+          <div class="my-5">
+              <h5>SFL (<span id="Year"></span>) | <a href="#" onclick="cite()">Cite this</a><h5> 
+              <div id="Cite" style="display: none;"></div>
+          </div>
+
+          <div class="my-2">
+            <div class="underline-header">
+              <h2>Executive Summary</h2>
+            </div>
+
+            <div><p id="ExecSummary"></p></div>
+            
+            <div class="my-4" id="Body"></div>
+          </div>
+        </div>
+        <div class="col col-3 d-none d-md-block">
+          <div class="my-5">
+          <a type="button" class="btn btn-primary btn-block" href="http://www.publications.scientistsforlabour.org.uk/000/000.pdf">Download PDF</a>
+          </div>
+          <div class="my-5" id>
+            <h3> Related </h3>
+            <div id="Related"></div>
+          </div>
+          <div class="my-5">
+            <h3> Share </h3>
+            
+
+            <div class="fb-share-button" data-href="http://www.publications.scientistsforlabour.org.uk/000/index.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.publications.scientistsforlabour.org.uk%2F000%2Findex.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+            
+            <a id="TwitterShare" class="twitter-share-button">Tweet</a>
+            
+            
+            
+          </div>
+          <div class="my-5  d-none d-lg-block">
+            <h3> Follow Us</h3>
+            <div>
+              <a class="twitter-timeline" data-width="340" data-height="500" data-theme="light" href="https://twitter.com/Scientists4Lab?ref_src=twsrc%5Etfw">Tweets by Scientists4Lab</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+            
+            <div>
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FScientists4Lab%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
