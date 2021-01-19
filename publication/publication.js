@@ -4,7 +4,7 @@ function setParams(data) {
     // var authors="str";
     $("#Authors").text(authors);
     $("#Title").text(data.Title);
-    document.Title = data.Title;
+    document.title = data.Title;
     $("#Year").text(data.Year);
     $("#Date").text(data.Date);
     $("#ReportType").text(data.ReportType);
