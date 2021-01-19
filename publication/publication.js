@@ -14,6 +14,9 @@ function setParams(data) {
     $("#RT1").attr("href", "http://www.publications.scientistsforlabour.org.uk/#" + data.ReportType + "s");
     $("#RT2").text(data.ReportType);
 
+    var pdfurl = data.pdfurl;
+    $("#pdf").attr("href", pdfurl)
+    $("#pdfmob").attr("href", pdfurl)
     var body = '';
     data.Body.forEach(el => {
         body += '<div class="underline-header"><h2>' + el.Heading +'</h2></div>';

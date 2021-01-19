@@ -36,6 +36,7 @@ var data = {
     ],
     "TwitterText": "",
     "DoiUrl": "http://www.publications.scientistsforlabour.org.uk/000/index.html",
+    "PdfUrl": "http://www.publications.scientistsforlabour.org.uk/000/000.pdf",
     "Related": [{
         "Type": "Blog",
         "Date": "28 Aug 2020",
