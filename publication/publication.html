@@ -21,7 +21,7 @@
     <script src="publication.js"></script>
     <script>
       window.onload = function() {
-        let url = window.location.url;
+        let url = data.DoiUrl;
         let fbhtml = '<div class="fb-share-button" data-href="' + url + '"" data-layout="button"></div>';
         $("#fb").append(fbhtml);
         setParams(data);
