@@ -14,7 +14,7 @@ function setParams(data) {
     $("#RT1").attr("href", "http://www.publications.scientistsforlabour.org.uk/#" + data.ReportType + "s");
     $("#RT2").text(data.ReportType);
 
-    var pdfurl = data.pdfurl;
+    var pdfurl = data.PdfUrl;
     $("#pdf").attr("href", pdfurl)
     $("#pdfmob").attr("href", pdfurl)
     var body = '';
