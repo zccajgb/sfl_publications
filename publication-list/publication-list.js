@@ -22,7 +22,8 @@ function initialise(data) {
 function setParams(data) {
     pubList ='';
     pubList += "<div class='list-group'>";
-    data = data.sort((d1,d2) => Date.parse(d2.Date)-Date.parse(d2.Date));
+    data = data.sort((d1, d2) => new Date(d1.Date) - new Date(d2.Date)).reverse();
+
     data.forEach(el => {
         pubList += "<a href='" + el.DoiUrl + "' class='list-group-item list-group-item-action flex-column align-items-start'>";
         pubList += '<div class="d-flex w-100 justify-content-between">';
